@@ -1,0 +1,27 @@
+{
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "yarn build && firebase emulators:start --only functions",
+    "shell": "yarn build && firebase functions:shell",
+    "start": "yarn shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^12.1.1",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.49.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.3.0",
+    "typescript": "^5.4.5"
+  },
+  "private": true
+}

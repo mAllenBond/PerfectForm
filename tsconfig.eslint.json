@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["functions/lib"],
+  "include": [".eslintrc.cjs", "src", "functions/src","./.storybook/*.ts", "**.ts", "**.tsx"]
+}
